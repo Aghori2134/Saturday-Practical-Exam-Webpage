@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<style>
+		body{
+			background-color:black;
+		}
+		.ic:hover{
+			color:#937AFF;
+		}
+		.button{
+			background-color:#886BFF;
+			padding:15px 20px;
+			border-radius:30px;
+			transition:all 0.3s;
+		}
+		.button:hover{
+			box-shadow:1px 3px 10px #AC8EFF;
+		}
+		.hero{
+			height:170vh;
+			background-image: linear-gradient(257deg,rgba(0, 0, 0, 1) 0%, rgba(126, 105, 221, 0.57) 51%, rgba(0, 0, 0, 1) 100%), url('images/hero.png');
+			background-size:100% 100%;
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			justify-content:center;
+		}
+		.text-containt{
+			width:60%;
+			text-align:center;
+			color:white;
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			justify-content:center;
+			gap:4%;
+		}
+		.butt{
+			height:80px;
+			width:100%;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			gap:2%;
+		}
+		.start{
+			background-color:#7E60FF;
+			padding:15px 20px;
+			border-radius:30px;
+		}
+		.start2{
+			padding:12px 20px;
+			border-radius:30px;
+			border:3px solid white;
+			transition:all 0.5s;
+		}
+		.start:hover{
+			box-shadow:1px 3px 10px #AC8EFF;
+		}
+		.start2:hover{
+			box-shadow:1px 3px 10px #AC8EFF;
+			background-color:#7E60FF;
+			border:0px soloid white;
+		}
+		.scroll-box{
+			height:600px;
+			width:70%;
+			background-color:gray;
+			margin-top:3%;
+			transform:rotateX(60px);
+		}
+		.card12{
+			animation: revel3 linear both;
+            animation-timeline: view();
+            animation-range: entry -90% cover 90%;
+		}
+		@keyframes revel3{
+            from {
+                transform: perspective(1600px)  rotateX(100deg) scale(0.55);
+            }
+            60% {
+                transform: perspective(1600px)  scale(1.05);
+            }
+            to {
+                opacity: 1;
+                transform: perspective(1600px)  rotateX(0) scale(1);
+            }
+        }
+		.box{
+			height:100vh;
+			width:100%;
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			justify-content:center;
+		}
+		.tecttttt{
+			width:70%;
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items:center;
+			gap:3%;
+			text-align:center;
+			color:white;
+			margin-top:3%;
+		}
+		.sec{
+			height:100px;
+			width:90%;
+			margin-top:2%;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			gap:10%;
+		}
+		.rty{
+			width:25%;
+			text-align:center;
+			padding:10px;
+			border-radius:30px;
+			border:1px solid white; 
+			color:white;
+		}
+		.cards{
+			height:350px;
+			width:90%;
+			display:flex;
+			align-items:center;
+			gap:2%;
+		}
+		.card{
+			width:24%;
+			display:flex;
+			flex-direction:column;
+			justify-centent:center;
+			gap:2%;
+			border-radius:10px;
+			background: #272241;
+			background: linear-gradient(257deg,rgba(39, 34, 65, 1) 0%, rgba(39, 34, 65, 0.57) 51%, rgba(52, 44, 87, 1) 100%);
+			padding:20px 20px;
+		}
+	</style>
+  </head>
+  <body class="bg-gray-900">
+		
+
+<nav class="bg-neutral-primary fixed top-0 w-full z-20 top-3 start-0 mt-1">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="https://preview.themewagon.com/automark/_astro/logo.BmLo65JO_Z1ABli3.webp" class="h-12" alt="Flowbite Logo" />
+  </a>
+  <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <a href="#" class=" button text-white">	
+		<b>Get this Templete</b>
+		</a>
+      
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user" style="padding:15px 25px; border-radius:10px; background-color:rgba(6, 4, 20, 0.5);">
+    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+      <li>
+        <a href="#" class=" ic block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Features</a>
+      </li>
+      <li>
+        <a href="#" class=" ic block py-2 px-3 text-white rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Pricing</a>
+      </li>
+      <li>
+        <a href="#" class="ic block py-2 px-3 text-white rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Blogs</a>
+      </li>
+      <li>
+        <a href="#" class="ic block py-2 px-3 text-white rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Integrations</a>
+      </li>
+      <li>
+        <a href="#" class="ic block py-2 px-3 text-white rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Case Studies</a>
+      </li>
+	  <li>
+        <a href="#" class="ic block py-2 px-3 text-white rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+	<section class="hero">	
+		<div class="text-containt">
+			<p class="text-[60px]"><b>The All-In-One Growth Software <br>for <span style="color:#937AFF;">Local Business Owners</span></b></p>
+			<p style="">The complete automated system designed to capture more leads, follow up instantly, and<br> grow your local business - all in one place.</p>
+			<div class="butt">
+				<a href="#" class="start"><b>Start Your 14-Days Free Trial</b></a>
+				<a href="#" class="start2"><b>Book A Demo</b></a>
+			</div>
+		</div>
+		<div class="scroll-box card12">
+			
+		</div>
+	</section>
+	<section class="box">	
+		<div class="tecttttt">	
+			<p style="font-size:40px;"><b>Are you losing real customers to the<span style="color:#806AE0;"> Follow-up<br> Gap?</span></b></p>
+			<p>Stop wasting money on marketing if you can't respond fast enough. Our system ensures every<br> lead gets immediate attention.</p>
+		</div>
+		<div class="sec">
+			<span class="rty" style="background-color:black;">Wasted Ad Spend</span>
+			<span class="rty" style="background-color:black;">Expensive 'Franken-stack' of tools</span>
+			<span class="rty" style="background-color:black;">Scattered Customer Data</span>
+		</div>                                        
+		<div class="sec">                             
+			<span class="rty" style="background-color:black;">Missed Calls Costing Thousands</span>
+			<span class="rty" style="background-color:black;">Lost Leads to Competitors</span>
+			<span class="rty" style="background-color:black;">Slow Response Times</span>
+		</div>
+	</section>
+	<section class="box">
+		<p style="color:white; font-size:60px; text-align:center;"><b>Replace Your Clunky Tools With A <span style="color:#937AFF">Smart, All-<br>In-One System</span></b></p>
+		<p style="color:white;">Log in to a single powerful dashboard to manage everything seamlessly.</p>
+		<div class="cards">
+			<div class="card">
+				<p style="font-size:50px; color:white; margin-left:5%;"><i class="ri-upload-2-fill"></i></p>
+				<p style="font-size:25px; color:white; margin-left:5%;"><b>Automated Customer<br> Follow-Up</b></p>
+				<p style="color:white; margin-left:5%;"><i class="ri-shining-fill"></i> Missed Call Auto-Responder <br><i class="ri-shining-fill"></i> Missed Call Auto-Responder <br><i class="ri-shining-fill"></i> Missed Call Auto-Responder</p>
+			</div>
+			<div class="card">
+				<p style="font-size:50px; color:white; margin-left:5%;"><i class="ri-settings-3-fill"></i></p>
+				<p style="font-size:25px; color:white; margin-left:5%;"><b>Automated Customer<br> Follow-Up</b></p>
+				<p style="color:white; margin-left:5%;"><i class="ri-shining-fill"></i> Missed Call Auto-Responder <br><i class="ri-shining-fill"></i> Missed Call Auto-Responder <br><i class="ri-shining-fill"></i> Missed Call Auto-Responder</p>
+			</div>
+			<div class="card">
+				<p style="font-size:50px; color:white; margin-left:5%;"><i class="ri-instance-fill"></i></p>
+				<p style="font-size:25px; color:white; margin-left:5%;"><b>Automated Customer<br> Follow-Up</b></p>
+				<p style="color:white; margin-left:5%;"><i class="ri-shining-fill"></i> Missed Call Auto-Responder <br><i class="ri-shining-fill"></i> Missed Call Auto-Responder <br><i class="ri-shining-fill"></i> Missed Call Auto-Responder</p>
+			</div>
+			<div class="card">
+				<p style="font-size:50px; color:white; margin-left:5%;"><i class="ri-user-fill"></i></p>
+				<p style="font-size:25px; color:white; margin-left:5%;"><b>Automated Customer<br> Follow-Up</b></p>
+				<p style="color:white; margin-left:5%;"><i class="ri-shining-fill"></i> Missed Call Auto-Responder <br><i class="ri-shining-fill"></i> Missed Call Auto-Responder <br><i class="ri-shining-fill"></i> Missed Call Auto-Responder</p>
+			</div>
+		</div>
+	</section>
+  </body>
+</html>
